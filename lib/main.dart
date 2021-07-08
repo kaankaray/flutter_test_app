@@ -10,9 +10,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: MyHomePage(title: 'A great application indeed!'),
     );
   }
@@ -75,17 +72,31 @@ class _MyHomePageState extends State<MyHomePage> {
           color: _customColor,
 
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+          // For some reason, column keeps on falling short.
             children: <Widget>[
-              Text(
-                'Hey there!',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 32,
-                  color: invertedColor(_customColor)
+              Container(
+                alignment: Alignment.center,
+                height : MediaQuery.of(context).size.height - 24,
+                child: Text(
+                  'Hey there!',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 32,
+                      color: invertedColor(_customColor)
+                  ),
                 ),
               ),
+              Container(
+                alignment: Alignment.bottomRight,
+                child: Text(
+                    'Kaan Karay\nkaankaray99@gmail.com',
+                    style: TextStyle(
+                        fontSize: 10,
+                        color: invertedColor(_customColor)
+                    ),
+                  textAlign: TextAlign.right,
+                ),
+              )
             ],
           ),
         ),
