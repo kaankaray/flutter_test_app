@@ -1,16 +1,11 @@
 # test_app_great
 
-A new Flutter project.
+A simple Flutter app which changes background color on tap.
 
-## Getting Started
+Tested on:
+- Chrome: ✅
+- iOS Simulator: ✅
 
-This project is a starting point for a Flutter application.
+<img width="632" alt="Screen Shot 2021-07-08 at 17 05 45" src="https://user-images.githubusercontent.com/25268781/124936100-eb7e0280-e00e-11eb-944f-db2d8745a61b.png">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="574" alt="Screen Shot 2021-07-08 at 17 05 16" src="https://user-images.githubusercontent.com/25268781/124936131-f20c7a00-e00e-11eb-9d54-b272a790ff1a.png">
